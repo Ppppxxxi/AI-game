@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1612;
+  --color-ink-soft: #2a241c;
+  --color-paper: #f3ead8;
+  --color-paper-deep: #e7d7bc;
+  --color-cinnabar: #9c342c;
+  --color-moss: #3f5144;
+  --color-tea: #8a6a45;
+  --color-mist: #8d8478;
+  --color-gold: #b08958;
+  --color-line: #d9cbb3;
+  --font-serif: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --font-brush: "Ma Shan Zheng", "Noto Serif SC", cursive;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-serif);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--color-cinnabar) 35%, white);
+  }
+}
+
+@utility sheet {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="江湖有信">
+  <rect width="32" height="32" rx="6" fill="#1A1612"/>
+  <rect x="5" y="4" width="22" height="24" rx="2" fill="#F3EAD8"/>
+  <rect x="5" y="4" width="22" height="3.5" fill="#3F5144"/>
+  <circle cx="16" cy="18.5" r="6.4" fill="#9C342C"/>
+  <circle cx="16" cy="18.5" r="2.3" fill="#B08958"/>
+</svg>
